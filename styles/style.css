@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+* {
+  box-sizing: border-box;
+  line-height: 1;
+  list-style: none;
+  outline: none;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+  background: linear-gradient(40deg, #7d5fc3 18%,#ae9bda 48%,#ccc0e7 59%,#fdfdfd 100%) fixed;
+  padding: 40px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-wrapper {
+  display: flex;
+  max-width: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-wrapper .login-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 60px 40px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.login-wrapper .login-image {
+  width: 50%;
+}
+
+.login-wrapper .login-image .image {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.login-form .login-title {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #313131;
+}
+
+.login-title .icon-title {
+  width: 27px;
+  margin-right: 5px;
+}
+
+.login-form .login-message {
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  color: #808080;
+}
+
+.login-form .buttons-div {
+  display: flex;
+}
+
+.login-form .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  width:160px;
+  height:40px;
+  text-align:center;
+  line-height:1.1rem;
+  margin-right: 10px;
+  color: #f3f3f3;
+  border-radius: 7px;
+}
+
+.fab {
+	margin-right: 7px;
+	font-size: 1.3rem;
+}
+
+.xing-logo {
+  width: 18px;
+  margin-right: 5px;
+}
+
+.login-form .fb-button {
+  background-color: #3b5998;
+}
+
+.login-form .xing-button {
+  background-color: #026466;
+}
+
+.login-form .or-span {
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  color: #616161;
+}
+
+.login-form .input-label {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.login-form .input {
+  margin-bottom: 12px;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-top-style: hidden;
+  border-bottom-style: groove;
+  border-bottom: 0.5px solid #7324a0;
+}
+
+.login-form .checkbox-password {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-form .checkbox-label, .password-link {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #464646;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.password-link:hover {
+  transition: 2s;
+  color: #7324a0;
+}
+
+.login-form .buttons-login {
+  display: flex;
+}
+
+.login-form .button2 {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 10px 20px 55px 0;
+  padding: 8px 32px;
+  border-radius: 5px;
+}
+
+.buttons-login .login-button {
+  background: linear-gradient(to right, rgb(119, 20, 211), rgb(182, 36, 211), rgb(226, 171, 186));
+  color: #f3f3f3;
+  border: 0;
+}
+
+.buttons-login .singup-button {
+  color: #464646;
+  border: 1px solid #adadad;
+}
+
+.login-form .terms-conditions {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #464646;
+}
+
+.login-form .terms-link {
+  font-size: 1em;
+  font-weight: 300;
+  text-decoration: none;
+  line-height: 1.6rem;
+  color: #6896d6;
+}
+
+.login-form .terms-link:hover {
+  transition: 2s;
+  color: #7324a0;
+}
+
+@media (max-width: 800px) {
+	.login-wrapper .login-form {
+		display: flex;
+		width: 100%
+	}
+	
+	.login-wrapper .login-image {
+		width: 0%
+	}
+	
+	.login-form .button, .login-form .button2 {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 500px) {
+  .login-form .buttons-div {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+}
+  
+  .login-form .button, .login-form .button2 {
+    margin: 5px;
+}
+
+  .login-form .buttons-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+}
